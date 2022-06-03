@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header >
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html">Plantinhas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -22,17 +22,6 @@
           <ul class="navbar-nav">
             <li class="nav-item active">
 
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">lorem</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">lorem</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
             <li class="nav-item nav-pills">
               <a class="nav-link active" href="login.html">Login</a>
             </li>
@@ -40,10 +29,13 @@
         </div>
       </nav>
     
+      <!-- formulario cadastro-->
+
     </header>
-    <h2>Cadastro lista de espera</h2>
-    <form>
-      <div class="form-row">
+    <h2 class="text-center">Cadastro lista de espera</h2>
+
+    <form class="shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="container form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail"> Email</label>
           <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
@@ -52,8 +44,6 @@
           <label for="inputPassword4">Password</label>
           <input name="senha" type="password" class="form-control" id="inputPassword4" placeholder="Password">
         </div>
-      </div>
-      
         <div class="form-group col-md-6">
           <label for="inputCep"> CEP</label>
           <input name = "cep" type="text" class="form-control" id="inputCep" placeholder="CEP">
@@ -76,16 +66,18 @@
           <label for="inputEstado">Estado</label>
           <input name = "estado"type="text" class="form-control" id="inputEstado">
         </div>
-   
-      <div class="form-group">
+    
+      </div>
+ 
+      <div class=" form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
           <label class="form-check-label" for="gridCheck">
-            Check me out
+            Me mantenha atualizado
           </label>
         </div>
       </div>
-    <button type="submit" class="btn btn-primary">Cadastrar</button> 
+      <button type="submit" class="btn btn-primary">Cadastrar</button> 
     </form>
   
 
