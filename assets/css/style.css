@@ -5,3 +5,25 @@ footer {
    height: 100px;
    line-height: 100px;
 }
+.container-card-msg-email{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card-msg-email{
+   background-color: whitesmoke;
+   border-radius: 5px;
+   font-family: sans-serif;
+   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+   padding: 30px;
+   margin: 20px;
+   width: 400px;
+}
+#botao-card-msg-email{
+   margin: 5px;
+   background: rgb(22, 139, 211);
+   color: white;
+   padding: 10px;
+   border: none;
+   border-radius: 16px;
+}
