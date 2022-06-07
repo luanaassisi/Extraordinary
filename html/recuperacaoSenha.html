@@ -39,12 +39,16 @@
         <div class="form-group col-md-6">
             <p> Você receberá um email confirmando a troca de senha </p>
           <label for="inputEmail"> Email</label>
-          <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
+          <input  onkeyup="validaEmail()" name="email" type="email" class="form-control" id="email" placeholder="Email">
+          <div id="txtEmail"></div>
 
           <label for="inputPassword4">Nova Senha </label>
-          <input name="senha" type="password" class="form-control" id="inputPassword4" placeholder="senha">
-          <label for="inputCep"> Confirmação nova senha</label>
-          <input name = "cep" type="text" class="form-control" id="inputCep" placeholder="Confirmação nova senha">
+          <input  onkeyup="validaSenha()" name= "senha" type="password" class="form-control" id="senha" placeholder="Nova senha">
+          <div id="txtSenha"></div>
+
+          <label for="inputPassword4">Nova Senha </label>
+          <input  onkeyup="senhaConfirma()" name="senha" type="password" class="form-control" id="confirmaSenha" placeholder="Confirma Senha">
+          <div id="txtConfirmaSenha"></div>
         </div>
     </div>
       <div>
@@ -60,7 +64,7 @@
         <a href="#"> Resilia</a>
         </div>
     </footer>
-    
+    <script src="../assets/js/valida.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

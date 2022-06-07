@@ -1,6 +1,8 @@
 let nome = window.document.querySelector('#nome')
 let email = window.document.querySelector('#email')
 let senha = window.document.querySelector('#senha')
+let confirmaSenha = window.document.querySelector('#confirmaSenha')
+let novaSenha = window.document.querySelector('#novaSenha')
 
 // function validaNome() {
 //     let txt = document.querySelector('#txtNome')
@@ -31,20 +33,33 @@ let senha = window.document.querySelector('#senha')
         if (senha.value.length <= 7 ){
             txtSenha.innerHTML = 'Sua senha deve conter no mínimo 8 caracteres'
             txtSenha.style.color = 'red'
+
         }else{
             txtSenha.innerHTML = 'Senha Válida'
             txtSenha.style.color = 'green'
         }
     }
 
-    // function confirmaSenha(){
-    //     let txtSenha = document.querySelector('#txtSenha')
+    function senhaNova(){
+        let txtNovaSenha = document.querySelector('#txtNovaSenha')
 
-    //     if (senha.value.length <= 8 ){
-    //         txtSenha.innerHTML = 'Sua senha deve conter no mínimo 8 caracteres'
-    //         txtSenha.style.color = 'red'
-    //     }else{
-    //         txtSenha.innerHTML = 'Senha Válida'
-    //         txtSenha.style.color = 'green'
-    //     }
-    // }
+        if (novaSenha.value.length <= 7 ){
+            txtNovaSenha.innerHTML = 'Sua senha deve conter no mínimo 8 caracteres'
+            txtNovaSenha.style.color = 'red'
+        }else{
+            txtNovaSenha.innerHTML = 'Senha Válida'
+            txtNovaSenha.style.color = 'green'
+        }
+    }
+
+    function senhaConfirma(){
+        let txtConfirmaSenha = document.querySelector('#txtConfirmaSenha')
+
+        if (senha.value != confirmaSenha.value){
+            txtConfirmaSenha.innerHTML = 'Suas senhas não coincidem'
+            txtConfirmaSenha.style.color = 'red'
+        }else{
+            txtConfirmaSenha.innerHTML = 'Senha Válida'
+            txtConfirmaSenha.style.color = 'green'
+        }
+    }
