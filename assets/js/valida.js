@@ -3,6 +3,8 @@ let email = window.document.querySelector('#email')
 let senha = window.document.querySelector('#senha')
 let confirmaSenha = window.document.querySelector('#confirmaSenha')
 let novaSenha = window.document.querySelector('#novaSenha')
+let emailOk = false
+let senhalOk = false
 
 // function validaNome() {
 //     let txt = document.querySelector('#txtNome')
@@ -24,6 +26,7 @@ let novaSenha = window.document.querySelector('#novaSenha')
         }else{
             txtEmail.innerHTML = 'E-mail Válido'
             txtEmail.style.color = 'green'
+            emailOk = true
         }
     }
 
@@ -33,10 +36,10 @@ let novaSenha = window.document.querySelector('#novaSenha')
         if (senha.value.length <= 7 ){
             txtSenha.innerHTML = 'Sua senha deve conter no mínimo 8 caracteres'
             txtSenha.style.color = 'red'
-
         }else{
             txtSenha.innerHTML = 'Senha Válida'
             txtSenha.style.color = 'green'
+            senhaOk = true
         }
     }
 
@@ -63,3 +66,12 @@ let novaSenha = window.document.querySelector('#novaSenha')
             txtConfirmaSenha.style.color = 'green'
         }
     }
+
+    function enviar(){
+     if(emailOk == true && senhaOk == true){
+        alert('Código de verificação envida para o e-mail cadastrado')
+    }else{
+        alert('Preencha os campos corretamente')
+
+    }
+}
